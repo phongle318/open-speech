@@ -78,8 +78,145 @@
           </form>
       </div>
     </div>
+    <div class="section" align="center" style="background-color:#F5F6F7">
+      <h4>Tổng quan</h4>
+      <p>
+        TTS là dịch vụ chuyển đổi văn bản thành giọng nói tự động. Sử dụng công nghệ học máy sâu (deep learning),
+        dịch vụ này của FPT AI giúp bạn tạo ra giọng nói với ngữ điệu tự nhiên như người thật. Với các lựa chọn phong phú:
+        giọng nam nữ cho cả ba vùng miền Bắc Trung Nam, bạn có thể tìm được giọng phù hợp nhất cho bài toán kinh doanh của mình.
+      </p>
+        Công nghệ này có thể được áp dụng để xây dựng: tổng đài chăm sóc khách hàng tự động, ứng dụng đọc tin tức, tương tác hội thoại với robots,
+        và nhiều ứng dụng khác.
+      <p>
+        TTS được truy cập dưới dạng API, nên dễ dàng tích hợp với bất kỳ hệ thống nào, triển khai ngay lập tức.
+        Sử dụng công nghệ điện toán đám mấy (cloud) TTS của FPT AI có tốc độ phản hồi nhanh, đáp ứng nhu cầu tải đột biến.
+        Tính tiền theo nhu cầu sử dụng thật, bản chỉ phải trả cho số lượng ký tự mà bạn chuyển đổi
+        thành giọng nói mà không phải có thêm định phí nào khác. File audio có thể lưu lại hoặc cache trên hệ thống
+        để dùng lại nhiều lần. Các yếu tố đó khiến TTS của FPT AI là lựa chọn hiệu quả để triển khai các ứng dụng giọng nói.
+      </p>
+      <img src="./assets/demo-summary.png" alt="summary">
+    </div>
     <div class="section">
-      <h5>Tổng quan</h5>
+      <h4 align="center">Tính năng</h4>
+      <div class="row">
+        <div class="col s3 m3">
+          <p align="center">
+            <i class="material-icons" style="font-size:4em">multiline_chart</i>
+          </p>
+          <p align="center">
+            <b>Đa dạng giọng vùng miền</b>
+          </p>
+          <ul style="list-style-type:disc">
+            <li>Miền Bắc:</li>
+            1 giọng nam<br>
+            1 giọng nữ
+            <li>Miền Trung:</li>
+            1 giọng nữ Huế: coming soon<br>
+            1 giọng nam: coming soon
+            <li>Miền Nam</li>
+            1 giọng nữ<br>
+            1 giọng nam: coming soon
+          </ul>  
+        </div>
+        <div class="col s3 m3">
+          <p align="center">
+            <i class="material-icons" style="font-size:4em">dashboard</i>
+          </p>
+          <p align="center">
+            <b>Giọng nói tự nhiên</b>
+          </p>
+          Sản phẩm là sự kết hợp của:<br>
+          <ul style="list-style-type:disc">
+            <li>Ngôn ngữ học (Linguistics): âm vị học (Phonology), hình thái học (Morphology), ngữ dụng học (Pragmatics)</li>
+            <li>Công nghệ: Xử lý ngôn ngữ tự nhiên (Natural Language Processing), học máy (Machine Learning), xử lý tín hiệu số (Digital Signal Processing)</li>
+          </ul>  
+          Kết quả là dịch vụ TTS của FPT.AI cho kết quả giọng đọc tự nhiên, tự động ngắt nghỉ khi đọc câu dài, có biểu cảm.
+        </div>
+        <div class="col s3">
+          <p align="center">
+            <i class="material-icons" style="font-size:4em">attach_money</i>
+          </p>
+          <p align="center">
+            <b>Giá cả thân thiện khách hàng</b>
+          </p>
+          <p>Không định phí. Dùng đến đâu trả tiền đến đó. Không phí hủy dịch vụ</p>
+          <p>Hệ thống sử dụng công nghệ điện toán đám mây (cloud) mới nhất, đáp ứng linh hoạt với bất kỳ nhu cầu tải đột biến của mọi khách hàng.</p>
+        </div>
+        <div class="col s3">
+          <p align="center">
+            <i class="material-icons" style="font-size:4em">cached</i>
+          </p>
+          <p align="center">
+            <b>Đơn giản, tiện dụng</b>
+          </p>
+          <p>
+            FPT AI cung cấp API để bạn truy cập dịch vụ TTS và tích hợp vào dịch vụ của bạn nhanh chóng.
+            Bạn chỉ cần gửi văn bản (text) muốn chuyển đổi thành giọng nói vào API của TTS, FPT AI sẽ chuyển văn bản đó thành file âm thanh
+            với các định dạng thông dụng như MP3. Bạn có thể lưu trữ và sử dụng tùy ý.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="background-color:#F5F6F7">
+      <h5 align="center">Cần hỗ trợ</h5>
+      <p align="center">
+        <b>Bạn cần hỗ trợ và tư vấn kỹ thuật, xin liên hệ <a href="mailto:support@fpt.ai">support@fpt.ai</a><br>
+        bạn cần tư vấn về dịch vụ hoặc trao đổi về kinh doanh xin liên hệ <a href="mailto:sales@fpt.ai">sales@fpt.ai</a></b>
+      </p>
+    </div>
+    <div class="section">
+      <h5 align="center">Bảng giá</h5>
+      <p align="center">
+        Dùng TTS của FPT AI bạn chỉ phải trả tiền cho dung lượng bạn thực sự sử dụng, không có bất kỳ khoản chi phí nào khác.
+      </p>
+      <div class="row" style="display: flex;">
+        <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+          <h5>Phiên bản miễn phí</h5><br>
+          <ul style="list-style-type:disc">
+            <li>Miễn phí 500K ký tự hàng tháng cho 12 tháng đầu tiên.</li>
+            <li>Dịch vụ miễn phí này giúp bạn thử nghiệm TTS; không hỗ trợ thương mại.</li>
+          </ul>
+          <p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
+        </div>
+        <div class="col s1"></div>
+        <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+          <h5>Phiên bản Dịch vụ thương mại</h5><br>
+          <ul style="list-style-type:disc">
+            <li>300K VNĐ cho 1000 ký tự.</li>
+            <li>Hỗ trợ kỹ thuật</li>
+            <li>Miễn phí nâng cấp chất lượng giọng và giọng nói</li>
+          </ul>
+          <p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
+        </div>
+        <div class="col s1"></div>
+        <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+          <h5>Dịch vụ xây dựng giọng riêng</h5><br>
+          <span>Nếu bạn có nhu cầu sở hữu giọng nói riêng cho dịch vụ của mình, chứng tôi có dịch vụ xây dựng giọng mới chỉ cho bạn sử dụng.</span>
+          <ul style="list-style-type:disc">
+            <li>Chi phí xây dựng giọng mới: 200M VNĐ (chưa bao tiền bản quyền giọng nói nếu phải trả cho người đọc)</li>
+            <li>Chỉ có bạn được sử dụng giọng này </li>
+            <li>Phí sử dụng vẫn là 300K VNĐ cho 1000 ký tự</li>
+            <li>Miễn phí nâng cấp chất lượng giọng nói (Khi áp dụng các công nghệ của cả hệ thống)</li>
+          </ul> 
+          <p><a class="waves-effect waves-light btn">button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="background-color:#F5F6F7">
+      <h5 align="center">Tài liệu</h5>
+        <ul style="list-style-type:disc;">
+          <li>Hướng dẫn</li>
+          <li>API Reference</li>
+          <li>SDK</li>
+        </ul> 
+    </div>
+    <div class="section">
+      <h5 align="center">Use cases</h5>
+      <div align="center">
+        <i class="material-icons">format_quote</i>
+        <p><i>Chúng tôi rất hài lòng khi sử dụng dịch vụ TTS của FPT.AI, dịch vụ giúp tự đống hóa công việc của hơn 200 nhân viên cskh</i></p>
+        <i class="material-icons">format_quote</i>
+      </div>
     </div>
   </div>
 </template>
