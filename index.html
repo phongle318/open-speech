@@ -2,242 +2,242 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>tests</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <meta charset="utf-8">
+ <title>tests</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 <!--input form-->
 <div class="section demo-background">
-	<div class="row">
-		<div class="container">
-			<div class="col s12 center h5-demo">
-					<h4 class="header">Demo</h4>
-			</div>
-			<form class="col s12" method="POST">
-					<div class="section">
-							<h5 class="h5-demo">Giọng đọc:</h5>
-							<div class="row">
-									<div class="col s12 m12">
-											<div class="input-field">
-													<div class="col s2 m2">
-															<input name="gender" type="radio" id="female" value="female" class="voice" />
-															<label for="female">Nữ miền Bắc (DungLTT)</label>
-													</div>
-													<div class="col s2 m2">
-															<input name="gender" type="radio" id="male" value="male" class="voice" />
-															<label for="male">Nam miền Bắc (ChungHC)</label>
-													</div>
-													<div class="col s2 m2">
-															<input name="gender" type="radio" id="hatieumai" value="hatieumai" class="voice" />
-															<label for="hatieumai">Nữ miền Nam (Hà Tiểu Mai)</label>
-													</div>
+ <div class="row">
+  <div class="container">
+   <div class="col s12 center h5-demo">
+     <h4 class="header">Demo</h4>
+   </div>
+   <form class="col s12" method="POST">
+     <div class="section">
+       <h5 class="h5-demo">Giọng đọc:</h5>
+       <div class="row">
+         <div class="col s12 m12">
+           <div class="input-field">
+             <div class="col s2 m2">
+               <input name="gender" type="radio" id="female" value="female" class="voice" />
+               <label for="female">Nữ miền Bắc (DungLTT)</label>
+             </div>
+             <div class="col s2 m2">
+               <input name="gender" type="radio" id="male" value="male" class="voice" />
+               <label for="male">Nam miền Bắc (ChungHC)</label>
+             </div>
+             <div class="col s2 m2">
+               <input name="gender" type="radio" id="hatieumai" value="hatieumai" class="voice" />
+               <label for="hatieumai">Nữ miền Nam (Hà Tiểu Mai)</label>
+             </div>
 
-											</div>
-									</div>
-									<div class="col input-field s12 m12">
-											<div class="m6">
-													<input name="prosody" type="checkbox" id="prosody" value="1" />
-													<label for="prosody">Thêm ngữ điệu cho câu hỏi</label>
-											</div>
-									</div>
-									<div class="col input-field s12 m12">
-											<h5 class="h5-demo">Tốc độ đọc:</h5>
-											<div class="m6">
-													<div style="max-width: 20%">
-															<p class="range-field">
-																	<input type="range" name="speed" id="speed" min="-3" max="3" />
-															</p>
-													</div>
-											</div>
-									</div>
-									<div class="col input-field s8 m8">
-											<h5 class="h5-demo">Nhập văn bản:</h5>
-											<div class="m6">
-													<div class="col s12 m9">
-															<textarea id="text" name="text" class="materialize-textarea h5-demo" length="500">
-											</textarea>
-													</div>
-											</div>
-									</div>
-									<div class="col input-field s8 m8">
-											<div class="col s12 m3">
-													<button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Đọc
-												<i class="material-icons right">send</i>
-										</button>
-											</div>
-											<div class="col s12 m6">
-													<div id="loading" class="progress">
-															<div class="indeterminate"></div>
-													</div>
-													<div id="audio">
-															<audio id="myAudio" controls="true" autoplay="true">
-															</audio>
-													</div>
-											</div>
-									</div>
-									<div class="col s12 m9 grey-text">
-											Để tích hợp vào ứng dụng của bạn và tăng giới hạn đến 2000 kí tự/request,<br/> mời bạn <a target="_blank"
-													href="http://dev.openfpt.vn">đăng kí tài khoản developer</a> và <a target="_blank" href="http://doc.openfpt.vn/#api-fpt-speech-synthesis-version-4-0-update-09-06-2017">dùng API theo hướng dẫn</a>
-									</div>
-							</div>
-					</div>
-			</form>
-		</div>
-	</div>
+           </div>
+         </div>
+         <div class="col input-field s12 m12">
+           <div class="m6">
+             <input name="prosody" type="checkbox" id="prosody" value="1" />
+             <label for="prosody">Thêm ngữ điệu cho câu hỏi</label>
+           </div>
+         </div>
+         <div class="col input-field s12 m12">
+           <h5 class="h5-demo">Tốc độ đọc:</h5>
+           <div class="m6">
+             <div style="max-width: 20%">
+               <p class="range-field">
+                 <input type="range" name="speed" id="speed" min="-3" max="3" />
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="col input-field s8 m8">
+           <h5 class="h5-demo">Nhập văn bản:</h5>
+           <div class="m6">
+             <div class="col s12 m9">
+               <textarea id="text" name="text" class="materialize-textarea h5-demo" length="500">
+           </textarea>
+             </div>
+           </div>
+         </div>
+         <div class="col input-field s8 m8">
+           <div class="col s12 m3">
+             <button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Đọc
+            <i class="material-icons right">send</i>
+          </button>
+           </div>
+           <div class="col s12 m6">
+             <div id="loading" class="progress">
+               <div class="indeterminate"></div>
+             </div>
+             <div id="audio">
+               <audio id="myAudio" controls="true" autoplay="true">
+               </audio>
+             </div>
+           </div>
+         </div>
+         <div class="col s12 m9 grey-text">
+           Để tích hợp vào ứng dụng của bạn và tăng giới hạn đến 2000 kí tự/request,<br/> mời bạn <a target="_blank"
+             href="http://dev.openfpt.vn">đăng kí tài khoản developer</a> và <a target="_blank" href="http://doc.openfpt.vn/#api-fpt-speech-synthesis-version-4-0-update-09-06-2017">dùng API theo hướng dẫn</a>
+         </div>
+       </div>
+     </div>
+   </form>
+  </div>
+ </div>
 </div>
 <div class="section" align="center" style="background-color:#F5F6F7">
-	<div class="container">
-		<h4>Tổng quan</h4>
-		<p>
-				TTS là dịch vụ chuyển đổi văn bản thành giọng nói tự động. Sử dụng công nghệ học máy sâu (deep learning), dịch vụ này của
-				FPT AI giúp bạn tạo ra giọng nói với ngữ điệu tự nhiên như người thật. Với các lựa chọn phong phú: giọng nam
-				nữ cho cả ba vùng miền Bắc Trung Nam, bạn có thể tìm được giọng phù hợp nhất cho bài toán kinh doanh của mình.
-		</p>
-		Công nghệ này có thể được áp dụng để xây dựng: tổng đài chăm sóc khách hàng tự động, ứng dụng đọc tin tức, tương tác hội
-		thoại với robots, và nhiều ứng dụng khác.
-		<p>
-				TTS được truy cập dưới dạng API, nên dễ dàng tích hợp với bất kỳ hệ thống nào, triển khai ngay lập tức. Sử dụng công nghệ
-				điện toán đám mấy (cloud) TTS của FPT AI có tốc độ phản hồi nhanh, đáp ứng nhu cầu tải đột biến. Tính tiền theo
-				nhu cầu sử dụng thật, bản chỉ phải trả cho số lượng ký tự mà bạn chuyển đổi thành giọng nói mà không phải có
-				thêm định phí nào khác. File audio có thể lưu lại hoặc cache trên hệ thống để dùng lại nhiều lần. Các yếu tố
-				đó khiến TTS của FPT AI là lựa chọn hiệu quả để triển khai các ứng dụng giọng nói.
-		</p>
-		<img src="./assets/demo-summary.png" alt="summary">
-	</div>
+ <div class="container">
+  <h4>Tổng quan</h4>
+  <p>
+    TTS là dịch vụ chuyển đổi văn bản thành giọng nói tự động. Sử dụng công nghệ học máy sâu (deep learning), dịch vụ này của
+    FPT AI giúp bạn tạo ra giọng nói với ngữ điệu tự nhiên như người thật. Với các lựa chọn phong phú: giọng nam
+    nữ cho cả ba vùng miền Bắc Trung Nam, bạn có thể tìm được giọng phù hợp nhất cho bài toán kinh doanh của mình.
+  </p>
+  Công nghệ này có thể được áp dụng để xây dựng: tổng đài chăm sóc khách hàng tự động, ứng dụng đọc tin tức, tương tác hội
+  thoại với robots, và nhiều ứng dụng khác.
+  <p>
+    TTS được truy cập dưới dạng API, nên dễ dàng tích hợp với bất kỳ hệ thống nào, triển khai ngay lập tức. Sử dụng công nghệ
+    điện toán đám mấy (cloud) TTS của FPT AI có tốc độ phản hồi nhanh, đáp ứng nhu cầu tải đột biến. Tính tiền theo
+    nhu cầu sử dụng thật, bản chỉ phải trả cho số lượng ký tự mà bạn chuyển đổi thành giọng nói mà không phải có
+    thêm định phí nào khác. File audio có thể lưu lại hoặc cache trên hệ thống để dùng lại nhiều lần. Các yếu tố
+    đó khiến TTS của FPT AI là lựa chọn hiệu quả để triển khai các ứng dụng giọng nói.
+  </p>
+  <img src="./assets/demo-summary.png" alt="summary">
+ </div>
 </div>
 <div class="section">
-	<div class="container">
-		<h4 align="center">Tính năng</h4>
-		<div class="row">
-				<div class="col s3 m3">
-						<p align="center">
-								<i class="material-icons cyan-text darken-4-text" style="font-size:4em">multiline_chart</i>
-						</p>
-						<p align="center">
-								<b>Đa dạng giọng vùng miền</b>
-						</p>
-						<ul style="list-style-type:disc">
-								<li>Miền Bắc:</li>
-								1 giọng nam<br> 1 giọng nữ
-								<li>Miền Trung:</li>
-								1 giọng nữ Huế: coming soon<br> 1 giọng nam: coming soon
-								<li>Miền Nam</li>
-								1 giọng nữ<br> 1 giọng nam: coming soon
-						</ul>
-				</div>
-				<div class="col s3 m3">
-						<p align="center">
-								<i class="material-icons cyan-text darken-4-text" style="font-size:4em">dashboard</i>
-						</p>
-						<p align="center">
-								<b>Giọng nói tự nhiên</b>
-						</p>
-						Sản phẩm là sự kết hợp của:<br>
-						<ul style="list-style-type:disc">
-								<li>Ngôn ngữ học (Linguistics): âm vị học (Phonology), hình thái học (Morphology), ngữ dụng học (Pragmatics)</li>
-								<li>Công nghệ: Xử lý ngôn ngữ tự nhiên (Natural Language Processing), học máy (Machine Learning), xử lý tín
-										hiệu số (Digital Signal Processing)</li>
-						</ul>
-						Kết quả là dịch vụ TTS của FPT.AI cho kết quả giọng đọc tự nhiên, tự động ngắt nghỉ khi đọc câu dài, có biểu cảm.
-				</div>
-				<div class="col s3">
-						<p align="center">
-								<i class="material-icons cyan-text darken-4-text" style="font-size:4em">attach_money</i>
-						</p>
-						<p align="center">
-								<b>Giá cả thân thiện khách hàng</b>
-						</p>
-						<p>Không định phí. Dùng đến đâu trả tiền đến đó. Không phí hủy dịch vụ</p>
-						<p>Hệ thống sử dụng công nghệ điện toán đám mây (cloud) mới nhất, đáp ứng linh hoạt với bất kỳ nhu cầu tải đột
-								biến của mọi khách hàng.</p>
-				</div>
-				<div class="col s3">
-						<p align="center">
-								<i class="material-icons cyan-text darken-4-text" style="font-size:4em">cached</i>
-						</p>
-						<p align="center">
-								<b>Đơn giản, tiện dụng</b>
-						</p>
-						<p>
-								FPT AI cung cấp API để bạn truy cập dịch vụ TTS và tích hợp vào dịch vụ của bạn nhanh chóng. Bạn chỉ cần gửi văn bản (text)
-								muốn chuyển đổi thành giọng nói vào API của TTS, FPT AI sẽ chuyển văn bản đó thành file âm thanh với
-								các định dạng thông dụng như MP3. Bạn có thể lưu trữ và sử dụng tùy ý.
-						</p>
-				</div>
-		</div>
-	</div>
+ <div class="container">
+  <h4 align="center">Tính năng</h4>
+  <div class="row">
+    <div class="col s3 m3">
+      <p align="center">
+        <i class="material-icons cyan-text darken-4-text" style="font-size:4em">multiline_chart</i>
+      </p>
+      <p align="center">
+        <b>Đa dạng giọng vùng miền</b>
+      </p>
+      <ul style="list-style-type:disc">
+        <li>Miền Bắc:</li>
+        1 giọng nam<br> 1 giọng nữ
+        <li>Miền Trung:</li>
+        1 giọng nữ Huế: coming soon<br> 1 giọng nam: coming soon
+        <li>Miền Nam</li>
+        1 giọng nữ<br> 1 giọng nam: coming soon
+      </ul>
+    </div>
+    <div class="col s3 m3">
+      <p align="center">
+        <i class="material-icons cyan-text darken-4-text" style="font-size:4em">dashboard</i>
+      </p>
+      <p align="center">
+        <b>Giọng nói tự nhiên</b>
+      </p>
+      Sản phẩm là sự kết hợp của:<br>
+      <ul style="list-style-type:disc">
+        <li>Ngôn ngữ học (Linguistics): âm vị học (Phonology), hình thái học (Morphology), ngữ dụng học (Pragmatics)</li>
+        <li>Công nghệ: Xử lý ngôn ngữ tự nhiên (Natural Language Processing), học máy (Machine Learning), xử lý tín
+          hiệu số (Digital Signal Processing)</li>
+      </ul>
+      Kết quả là dịch vụ TTS của FPT.AI cho kết quả giọng đọc tự nhiên, tự động ngắt nghỉ khi đọc câu dài, có biểu cảm.
+    </div>
+    <div class="col s3">
+      <p align="center">
+        <i class="material-icons cyan-text darken-4-text" style="font-size:4em">attach_money</i>
+      </p>
+      <p align="center">
+        <b>Giá cả thân thiện khách hàng</b>
+      </p>
+      <p>Không định phí. Dùng đến đâu trả tiền đến đó. Không phí hủy dịch vụ</p>
+      <p>Hệ thống sử dụng công nghệ điện toán đám mây (cloud) mới nhất, đáp ứng linh hoạt với bất kỳ nhu cầu tải đột
+        biến của mọi khách hàng.</p>
+    </div>
+    <div class="col s3">
+      <p align="center">
+        <i class="material-icons cyan-text darken-4-text" style="font-size:4em">cached</i>
+      </p>
+      <p align="center">
+        <b>Đơn giản, tiện dụng</b>
+      </p>
+      <p>
+        FPT AI cung cấp API để bạn truy cập dịch vụ TTS và tích hợp vào dịch vụ của bạn nhanh chóng. Bạn chỉ cần gửi văn bản (text)
+        muốn chuyển đổi thành giọng nói vào API của TTS, FPT AI sẽ chuyển văn bản đó thành file âm thanh với
+        các định dạng thông dụng như MP3. Bạn có thể lưu trữ và sử dụng tùy ý.
+      </p>
+    </div>
+  </div>
+ </div>
 </div>
 <div class="section" style="background-color:#F5F6F7">
-	<div class="container">
-		<h4 align="center">Cần hỗ trợ</h4>
-		<p align="center">
-				<b>Bạn cần hỗ trợ và tư vấn kỹ thuật, xin liên hệ <a href="mailto:support@fpt.ai">support@fpt.ai</a><br>
-				bạn cần tư vấn về dịch vụ hoặc trao đổi về kinh doanh xin liên hệ <a href="mailto:sales@fpt.ai">sales@fpt.ai</a></b>
-		</p>
-	</div>
+ <div class="container">
+  <h4 align="center">Cần hỗ trợ</h4>
+  <p align="center">
+    <b>Bạn cần hỗ trợ và tư vấn kỹ thuật, xin liên hệ <a href="mailto:support@fpt.ai">support@fpt.ai</a><br>
+    bạn cần tư vấn về dịch vụ hoặc trao đổi về kinh doanh xin liên hệ <a href="mailto:sales@fpt.ai">sales@fpt.ai</a></b>
+  </p>
+ </div>
 </div>
 <div class="section">
-	<div class="container">
-		<h4 align="center">Bảng giá</h4>
-		<p align="center">
-				Dùng TTS của FPT AI bạn chỉ phải trả tiền cho dung lượng bạn thực sự sử dụng, không có bất kỳ khoản chi phí nào khác.
-		</p>
-		<div class="row" style="display: flex;">
-				<div class="col s3" style="background-color:#F5F6F7; position:relative;">
-						<h5 align="center">Phiên bản miễn phí</h5><br>
-						<ul style="list-style-type:disc">
-								<li>Miễn phí 500K ký tự hàng tháng cho 12 tháng đầu tiên.</li>
-								<li>Dịch vụ miễn phí này giúp bạn thử nghiệm TTS; không hỗ trợ thương mại.</li>
-						</ul>
-						<p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
-				</div>
-				<div class="col s1"></div>
-				<div class="col s3" style="background-color:#F5F6F7; position:relative;">
-						<h5 align="center">Phiên bản Dịch vụ thương mại</h5><br>
-						<ul style="list-style-type:disc">
-								<li>300K VNĐ cho 1000 ký tự.</li>
-								<li>Hỗ trợ kỹ thuật</li>
-								<li>Miễn phí nâng cấp chất lượng giọng và giọng nói</li>
-						</ul>
-						<p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
-				</div>
-				<div class="col s1"></div>
-				<div class="col s3" style="background-color:#F5F6F7; position:relative;">
-						<h5 align="center">Dịch vụ xây dựng giọng riêng</h5><br>
-						<span>Nếu bạn có nhu cầu sở hữu giọng nói riêng cho dịch vụ của mình, chứng tôi có dịch vụ xây dựng giọng mới chỉ cho bạn sử dụng.</span>
-						<ul style="list-style-type:disc">
-								<li>Chi phí xây dựng giọng mới: 200M VNĐ (chưa bao tiền bản quyền giọng nói nếu phải trả cho người đọc)</li>
-								<li>Chỉ có bạn được sử dụng giọng này </li>
-								<li>Phí sử dụng vẫn là 300K VNĐ cho 1000 ký tự</li>
-								<li>Miễn phí nâng cấp chất lượng giọng nói (Khi áp dụng các công nghệ của cả hệ thống)</li>
-						</ul>
-						<p><a class="waves-effect waves-light btn">button</a></p>
-				</div>
-		</div>
-	</div>
+ <div class="container">
+  <h4 align="center">Bảng giá</h4>
+  <p align="center">
+    Dùng TTS của FPT AI bạn chỉ phải trả tiền cho dung lượng bạn thực sự sử dụng, không có bất kỳ khoản chi phí nào khác.
+  </p>
+  <div class="row" style="display: flex;">
+    <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+      <h5 align="center">Phiên bản miễn phí</h5><br>
+      <ul style="list-style-type:disc">
+        <li>Miễn phí 500K ký tự hàng tháng cho 12 tháng đầu tiên.</li>
+        <li>Dịch vụ miễn phí này giúp bạn thử nghiệm TTS; không hỗ trợ thương mại.</li>
+      </ul>
+      <p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
+    </div>
+    <div class="col s1"></div>
+    <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+      <h5 align="center">Phiên bản Dịch vụ thương mại</h5><br>
+      <ul style="list-style-type:disc">
+        <li>300K VNĐ cho 1000 ký tự.</li>
+        <li>Hỗ trợ kỹ thuật</li>
+        <li>Miễn phí nâng cấp chất lượng giọng và giọng nói</li>
+      </ul>
+      <p align="center" style="bottom: 0; position: absolute"><a class="waves-effect waves-light btn">button</a></p>
+    </div>
+    <div class="col s1"></div>
+    <div class="col s3" style="background-color:#F5F6F7; position:relative;">
+      <h5 align="center">Dịch vụ xây dựng giọng riêng</h5><br>
+      <span>Nếu bạn có nhu cầu sở hữu giọng nói riêng cho dịch vụ của mình, chứng tôi có dịch vụ xây dựng giọng mới chỉ cho bạn sử dụng.</span>
+      <ul style="list-style-type:disc">
+        <li>Chi phí xây dựng giọng mới: 200M VNĐ (chưa bao tiền bản quyền giọng nói nếu phải trả cho người đọc)</li>
+        <li>Chỉ có bạn được sử dụng giọng này </li>
+        <li>Phí sử dụng vẫn là 300K VNĐ cho 1000 ký tự</li>
+        <li>Miễn phí nâng cấp chất lượng giọng nói (Khi áp dụng các công nghệ của cả hệ thống)</li>
+      </ul>
+      <p><a class="waves-effect waves-light btn">button</a></p>
+    </div>
+  </div>
+ </div>
 </div>
 <div class="section" style="background-color:#F5F6F7">
-	<div class="container">
-		<h4 align="center">Tài liệu</h4>
-		<ul style="list-style-type:disc;">
-				<li>Hướng dẫn</li>
-				<li>API Reference</li>
-				<li>SDK</li>
-		</ul>
-	</div>
+ <div class="container">
+  <h4 align="center">Tài liệu</h4>
+  <ul style="list-style-type:disc;">
+    <li>Hướng dẫn</li>
+    <li>API Reference</li>
+    <li>SDK</li>
+  </ul>
+ </div>
 </div>
 <div class="section">
-	<div class="container">
-		<h4 align="center">Use cases</h4>
-		<div align="center">
-				<i class="material-icons">format_quote</i>
-				<p><i>Chúng tôi rất hài lòng khi sử dụng dịch vụ TTS của FPT.AI, dịch vụ giúp tự đống hóa công việc của hơn 200 nhân viên cskh</i></p>
-				<i class="material-icons">format_quote</i>
-		</div>
-	</div>
+ <div class="container">
+  <h4 align="center">Use cases</h4>
+  <div align="center">
+    <i class="material-icons">format_quote</i>
+    <p><i>Chúng tôi rất hài lòng khi sử dụng dịch vụ TTS của FPT.AI, dịch vụ giúp tự đống hóa công việc của hơn 200 nhân viên cskh</i></p>
+    <i class="material-icons">format_quote</i>
+  </div>
+ </div>
 </div>
 
 <script>
@@ -250,17 +250,17 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <style>
-		.demo-background {
-				background-image: url('./assets/demo-background.png');
-				background-size: auto;
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #000;
-		}
+  .demo-background {
+    background-image: url('./assets/demo-background.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
 
-		.h5-demo {
-				color: #e9e9e9;
-		}
+  .h5-demo {
+    color: #e9e9e9;
+  }
 </style>
 
 
